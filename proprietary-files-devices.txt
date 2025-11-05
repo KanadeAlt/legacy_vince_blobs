@@ -1,3 +1,12 @@
+# Camera - from vince (fix missing for a14-16)
+vendor/lib/libchromaflash.so
+vendor/lib/libmmcamera_hdr_gb_lib.so
+vendor/lib/libmmcamera_tuning.so
+vendor/lib/liboptizoom.so
+vendor/lib/libseemore.so
+vendor/lib/libtrueportrait.so
+vendor/lib/libubifocus.so
+
 # Fingerprint (FPC) - from vince
 vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/com.fingerprints.extension@1.0.so
