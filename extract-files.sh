@@ -8,7 +8,8 @@
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib64/hw/gf_fingerprint.default.so)
+        vendor/lib64/hw/gf_fingerprint.goodix.default.so)
+            "${PATCHELF}" --set-soname "gf_fingerprint.goodix.default.so" "${2}"
             "${PATCHELF_0_18}" --replace-needed "libvendor.goodix.hardware.fingerprint@1.0.so" "vendor.goodix.hardware.fingerprint@1.0.so" "${2}"
             ;;
         vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
