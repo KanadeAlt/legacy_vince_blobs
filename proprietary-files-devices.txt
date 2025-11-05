@@ -6,6 +6,8 @@ vendor/lib/liboptizoom.so
 vendor/lib/libseemore.so
 vendor/lib/libtrueportrait.so
 vendor/lib/libubifocus.so
+vendor/lib/libllvd_smore.so
+vendor/lib/libmpbase.so
 
 # Fingerprint (FPC) - from vince
 vendor/lib64/hw/fingerprint.fpc.default.so
