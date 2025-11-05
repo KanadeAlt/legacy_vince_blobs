@@ -12,7 +12,7 @@ vendor/lib/libmpbase.so
 # Fingerprint (FPC) - from vince
 vendor/lib64/hw/fingerprint.fpc.default.so
 
-# Fingerprint (Goodix)
+# Fingerprint (Goodix) - from vince
 system/etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin
 lib64/libgf_algo.so:vendor/lib64/libgf_algo.so
 lib64/libgf_hal.so:vendor/lib64/libgf_hal.so
