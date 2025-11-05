@@ -8,7 +8,7 @@ vendor/lib/libtrueportrait.so
 vendor/lib/libubifocus.so
 
 # Fingerprint (FPC) - from vince
-vendor/lib64/hw/fingerprint.default.so
+vendor/lib64/hw/fingerprint.fpc.default.so
 
 # Fingerprint (Goodix)
 system/etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin
@@ -17,5 +17,5 @@ lib64/libgf_hal.so:vendor/lib64/libgf_hal.so
 lib64/libgf_ca.so:vendor/lib64/libgf_ca.so
 
 # Fingerprint (Goodix HAL) - from daisy
-vendor/lib64/hw/gf_fingerprint.default.so
+vendor/lib64/hw/gf_fingerprint.goodix.default.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
