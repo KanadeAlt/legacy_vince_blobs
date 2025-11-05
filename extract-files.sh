@@ -17,7 +17,7 @@ function blob_fixup() {
         | libseemore.so \
         | libtrueportrait.so \
         | libubifocus.so )
-            "${PATCHELF_0_17_2}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
+            "${PATCHELF_0_18}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
         vendor/lib/libmmcamera_tuning.so)
             "${PATCHELF_0_18}" --remove-needed "libmm-qcamera.so" "${2}"
