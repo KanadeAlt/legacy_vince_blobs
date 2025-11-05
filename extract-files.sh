@@ -8,11 +8,14 @@
 
 function blob_fixup() {
     case "${1}" in
+        vendor/lib/libmmcamera_tuning.so)
+            "${PATCHELF_0_18}" --remove-needed "libmm-qcamera.so" "${2}"
+            ;;
         vendor/lib64/hw/fingerprint.fpc.default.so)
-            "${PATCHELF}" --set-soname "fingerprint.fpc.default.so" "${2}"
+            "${PATCHELF_0_18}" --set-soname "fingerprint.fpc.default.so" "${2}"
             ;;
         vendor/lib64/hw/gf_fingerprint.goodix.default.so)
-            "${PATCHELF}" --set-soname "gf_fingerprint.goodix.default.so" "${2}"
+            "${PATCHELF_0_18}" --set-soname "gf_fingerprint.goodix.default.so" "${2}"
             "${PATCHELF_0_18}" --replace-needed "libvendor.goodix.hardware.fingerprint@1.0.so" "vendor.goodix.hardware.fingerprint@1.0.so" "${2}"
             ;;
         vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so)
