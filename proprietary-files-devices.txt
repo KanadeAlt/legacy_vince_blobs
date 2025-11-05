@@ -16,6 +16,8 @@ vendor/lib64/hw/fingerprint.fpc.default.so
 system/etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin
 lib64/libgf_algo.so:vendor/lib64/libgf_algo.so
 lib64/libgf_hal.so:vendor/lib64/libgf_hal.so
+
+# Fingerprint (Goodix) - from uter
 lib64/libgf_ca.so:vendor/lib64/libgf_ca.so
 
 # Fingerprint (Goodix HAL) - from daisy
